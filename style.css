@@ -56,7 +56,10 @@ aside {
 }
 
 footer {
-    height: 50px;
     clear: both;
-    background: yellow;
+}
+
+#wrapper footer .images img {       /* . für classes # für id's*/
+    padding-top: 20px;
+    padding-left: 20px;
 }
