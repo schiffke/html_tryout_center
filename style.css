@@ -59,7 +59,13 @@ footer {
     clear: both;
 }
 
-#wrapper footer .images img {       /* . für classes # für id's*/
+.images img {       /* . für classes # für id's*/
     padding-top: 20px;
     padding-left: 20px;
+    height: 200px;
+    width: 200px;
+}
+
+.images img:hover {
+    opacity: .5;
 }
