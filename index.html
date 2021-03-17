@@ -4,13 +4,15 @@
         <link rel="stylesheet" href="style.css" type="text/css">            <!--linking css file-->
         <title>Tryout Stuff</title>
         <meta charset="utf-8">                                              <!--ermöglich u.a. äöü-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="index.js"></script>
     </head>
 
     <body>
-        <div id = "wrapper">
+        <div id="wrapper">
             <header>
                 <a href="https://www.youtube.com/watch?v=PUCgC_TukKg">      <!--use this image as link-->
-                    <img src="src\images\Logo.png" alt="Website Logo">
+                    <img src="src/images/logo.png" alt="Website Logo">
                 </a>
             </header>
 
@@ -21,10 +23,25 @@
                     <li><a href="https://www.bvg.de/de">contact</a></li>
                 </ul>
             </nav>
+            
+            <div class="row">
+                <div class="col-md-3" style="background-color: red;">Team Rot</div>
+                <button class="col-md-3 btn btn-primary" onclick="button_press(5)">Cheer for red</button>
+                <button class="col-md-3 btn btn-primary" onclick="button_press(-5)">Cheer for green</button>
+                <div class="col-md-3" style="background-color: green;">Team Grün</div>
+            </div>
+
+            <br>
+            
+            <div class="progress">
+                <div id= progressbar_top class="progress-bar" role="progressbar" style="width: 10%;">
+                </div>
+            </div>
+
             <section>
                 <div class="main_content">
+                    <h1>Die Reise des Lebens</h1>
                     <p>
-                        <h1>Die Reise des Lebens</h1>
                         Es begab sich also zu jener Zeit, <br>
                         das meine Adresse folgende betrug: <br>
                         <br>
@@ -38,24 +55,37 @@
                     </p>
                 </div>
             </section>
+
             <aside>
                 <div class="sidebar">
                     <h2>Sidebar</h2>
-                    <img src="src/images/Sidebar.PNG" alt="Sidebar">
+                    <img src="src/images/sidebar.PNG" alt="Sidebar">
                 </div>
             </aside>
+            
             <footer>
-                <div class="images">
-                    <a href="https://www.youtube.com/">
-                        <img src="src/images/youtube.png" alt="Youtube">
-                    </a>
-                    <a href="https://www.twitch.tv/">
-                        <img src="src/images/twitch.png" alt="Twitch">
-                    </a>
-                    <a href="https://proxer.me/">
-                        <img src="src/images/proxer.png" alt="Proxer">
-                    </a>
+                <div class="row images">
+                    <div class="col-md-3 image">
+                        <a href="https://www.youtube.com/">
+                            <img src="src/images/youtube.png" alt="Youtube">
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-md-offset-1 b image">     <!--col-md-offset-1 ein Grid frei lassen (links)-->
+                        <a href="https://www.twitch.tv/">
+                            <img src="src/images/twitch.png" alt="Twitch">
+                        </a>
+                    </div>
+
+                    <div class="col-md-1"></div>   <!--das selbe wie offset in unschön-->
+
+                    <div class="col-md-3 image">
+                        <a href="https://proxer.me/">
+                            <img src="src/images/proxer.png" alt="Proxer">
+                        </a>
+                    </div>
                 </div>
+                <br>     <!--purely cosmetic-->
             </footer>
         </div>
     </body>
