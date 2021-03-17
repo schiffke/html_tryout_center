@@ -11,6 +11,13 @@
     height: 330px;
 }
 
+#dropzone {
+    width: 600px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid grey;
+}
+
 header {
     padding-top: 10px;          /*padding = Abstand*/
     padding-bottom: 10px;

@@ -26,17 +26,21 @@
             
             <div class="row">
                 <div class="col-md-3" style="background-color: red;">Team Rot</div>
-                <button class="col-md-3 btn btn-primary" onclick="button_press(5)">Cheer for red</button>
-                <button class="col-md-3 btn btn-primary" onclick="button_press(-5)">Cheer for green</button>
+                <button class="col-md-3 btn btn-primary" onclick="cheer(5)">Cheer for red</button>
+                <button class="col-md-3 btn btn-primary" onclick="cheer(-5)">Cheer for green</button>
                 <div class="col-md-3" style="background-color: green;">Team Grün</div>
             </div>
 
-            <br>
+            <div id="button_space"><br></div>
             
             <div class="progress">
-                <div id= progressbar_top class="progress-bar" role="progressbar" style="width: 10%;">
+                <div id= progressbar_top class="progress-bar" role="progressbar" style="width: 50%;">
                 </div>
             </div>
+
+            <img id="drag_smiley" src="src/images/logo.png" draggable="true" ondragstart="drag(event)">
+
+            <div id="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
             <section>
                 <div class="main_content">
