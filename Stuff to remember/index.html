@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">            <!--linking css file-->
+        <title>Tryout Stuff</title>
+        <meta charset="utf-8">                                              <!--ermöglich u.a. äöü-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <a href="https://www.youtube.com/watch?v=PUCgC_TukKg">      <!--use this image as link-->
+                    <img src="src/images/logo.png" alt="Website Logo">
+                </a>
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="https://de.wikipedia.org/wiki/Mensch">about us</a></li>
+                    <li><a href="https://www.bvg.de/de">contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="row">
+                <div class="col-md-3" style="background-color: red;">Team Rot</div>
+                <button class="col-md-3 btn btn-primary" onclick="cheer(5)">Cheer for red</button>
+                <button class="col-md-3 btn btn-primary" onclick="cheer(-5)">Cheer for green</button>
+                <div class="col-md-3" style="background-color: green;">Team Grün</div>
+            </div>
+
+            <div id="button_space"><br></div>
+            
+            <div class="progress">
+                <div id= progressbar_top class="progress-bar" role="progressbar" style="width: 50%;">
+                </div>
+            </div>
+
+            <img id="drag_smiley" src="src/images/logo.png" draggable="true" ondragstart="drag(event)">
+
+            <div id="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            <section>
+                <div class="main_content">
+                    <h1>Die Reise des Lebens</h1>
+                    <p>
+                        Es begab sich also zu jener Zeit, <br>
+                        das meine Adresse folgende betrug: <br>
+                        <br>
+                        Mannheimer Gürteltierstr. 123 <br>
+                        12345 Ömmelburg <br>
+                        Narnia <br>
+                        <hr>
+                        Doch mein Ziel sollt sein und bleiben: <br>
+                        <br>
+                        <img src="src/images/berg.PNG" alt="Berg" width="200" height="200">
+                    </p>
+                </div>
+            </section>
+
+            <aside>
+                <div class="sidebar">
+                    <h2>Sidebar</h2>
+                    <img src="src/images/sidebar.PNG" alt="Sidebar">
+                </div>
+            </aside>
+            
+            <footer>
+                <div class="row images">
+                    <div class="col-md-3 image">
+                        <a href="https://www.youtube.com/">
+                            <img src="src/images/youtube.png" alt="Youtube">
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-md-offset-1 b image">     <!--col-md-offset-1 ein Grid frei lassen (links)-->
+                        <a href="https://www.twitch.tv/">
+                            <img src="src/images/twitch.png" alt="Twitch">
+                        </a>
+                    </div>
+
+                    <div class="col-md-1"></div>   <!--das selbe wie offset in unschön-->
+
+                    <div class="col-md-3 image">
+                        <a href="https://proxer.me/">
+                            <img src="src/images/proxer.png" alt="Proxer">
+                        </a>
+                    </div>
+                </div>
+                <br>     <!--purely cosmetic-->
+            </footer>
+        </div>
+    </body>
+</html>
